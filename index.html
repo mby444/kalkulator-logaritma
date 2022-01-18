@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kalkulator logaritma">
+  <meta property="og:title" content="Kalkulator Logaritma">
+  <meta property="og:description" content="Simple">
+  <meta name="keywords" content="kalkulator, calculator, logaritma, log, logarithm">
+  <title>Kalkulator Logaritma</title>
+  <link rel="stylesheet" href="/css/kalkulator-logaritma.css">
+</head>
+<body>
+  <div id="calculator-container">
+    <div id="output-container">
+      <input readonly value="" id="output">
+    </div>
+    <div id="input-container">
+      <table id="input-table">
+        <tr>
+          <td class="td"><button onclick="clearAll()" class="btn" id="btn-1">C</button></td>
+          <td class="td"><button onclick="del()" class="btn" id="btn-2">D</button></td>
+          <td class="td"><button onclick="add('(')" class="btn" id="btn-3">(</button></td>
+          <td class="td"><button onclick="add(')')" class="btn" id="btn-4">)</button></td>
+        </tr>
+        <tr>
+          <td class="td"><button onclick="add('log(10, ')" class="btn" id="btn-5">log</button></td>
+          <td class="td"><button onclick="add('log(2, ')" class="btn" id="btn-6">log2</button></td>
+          <td class="td"><button onclick="add('log(3, ')" class="btn" id="btn-7">log3</button></td>
+          <td class="td"><button onclick="add('log(')" class="btn" id="btn-8">logx</button></td>
+        </tr>
+        <tr>
+          <td class="td"><button onclick="add('7')" class="btn" id="btn-9">7</button></td>
+          <td class="td"><button onclick="add('8')" class="btn" id="btn-10">8</button></td>
+          <td class="td"><button onclick="add('9')" class="btn" id="btn-11">9</button></td>
+          <td class="td"><button onclick="add('÷')" class="btn" id="btn-12">&divide;</button></td>
+        </tr>
+        <tr>
+          <td class="td"><button onclick="add('4')" class="btn" id="btn-13">4</button></td>
+          <td class="td"><button onclick="add('5')" class="btn" id="btn-14">5</button></td>
+          <td class="td"><button onclick="add('6')" class="btn" id="btn-15">6</button></td>
+          <td class="td"><button onclick="add('×')" class="btn" id="btn-16">&times;</button></td>
+        </tr>
+        <tr>
+          <td class="td"><button onclick="add('1')" class="btn" id="btn-17">1</button></td>
+          <td class="td"><button onclick="add('2')" class="btn" id="btn-18">2</button></td>
+          <td class="td"><button onclick="add('3')" class="btn" id="btn-19">3</button></td>
+          <td class="td"><button onclick="add('-')" class="btn" id="btn-20">&minus;</button></td>
+        </tr>
+        <tr>
+          <td class="td"><button onclick="add('.')" class="btn" id="btn-21">.</button></td>
+          <td class="td"><button onclick="add('0')" class="btn" id="btn-22">0</button></td>
+          <td class="td"><button onclick="add(', ')" class="btn" id="btn-23">,</button></td>
+          <td class="td"><button onclick="add('+')" class="btn" id="btn-24">&plus;</button></td>
+        </tr>
+        <tr id="solve-tr">
+          <td id="solve-td"><button onclick="solve()" id="solve">&equals;</button></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <p id="copyright">&copy; M. Bima Y.</p>
+  <script src="/js/kalkulator-logaritma.js"></script>
+</body>
+</html>
